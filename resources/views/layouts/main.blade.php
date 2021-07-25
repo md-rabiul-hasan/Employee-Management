@@ -49,7 +49,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/employees">
                     <i class="fas fa-fw fa-user"></i>
                     <span>Employee Management</span></a>
             </li>
@@ -66,10 +66,10 @@
                 </a>
                 <div id="collapseSystem" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">Country</a>
-                        <a class="collapse-item" href="buttons.html">State</a>
-                        <a class="collapse-item" href="cards.html">Department</a>
-                        <a class="collapse-item" href="cards.html">City</a>
+                        <a class="collapse-item" href="{{ route('countries.index') }}">Country</a>
+                        <a class="collapse-item" href="{{ route('states.index') }}">State</a>
+                        <a class="collapse-item" href="{{ route('departments.index') }}">Department</a>
+                        <a class="collapse-item" href="{{ route('cities.index') }}">City</a>
                     </div>
                 </div>
             </li>
@@ -87,7 +87,7 @@
                 </a>
                 <div id="collapseUser" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="buttons.html">User</a>
+                        <a class="collapse-item" href="{{ route('users.index') }}">User</a>
                         <a class="collapse-item" href="cards.html">Role</a>
                         <a class="collapse-item" href="cards.html">Permission</a>
                     </div>
@@ -186,14 +186,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    </div>
-
                     @yield('content')
-
                 </div>
                 <!-- /.container-fluid -->
 
