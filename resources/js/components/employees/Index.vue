@@ -22,7 +22,7 @@
                             </form>
                         </div>
                         <div>
-                            <a  class="btn btn-primary mb-2">Create</a>
+                            <router-link :to="{ name: 'EmployeesCreate'}"  class="btn btn-primary mb-2" >Create</router-link>
                         </div>
                     </div>
                 </div>
