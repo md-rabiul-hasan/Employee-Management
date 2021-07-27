@@ -58,6 +58,21 @@
 </template>
 <script>
 export default {
-    
+     data() {
+        return {
+            employees: [],
+            showMessage: false,
+            message: "",
+            search: null,
+            selectedDeprtment: null,
+            departments: []
+        };
+    },
+    methods:{
+        getEmployees(){
+            axios
+                .get('')
+        }
+    }
 }
 </script>
